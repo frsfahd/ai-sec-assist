@@ -1,0 +1,6 @@
+openai
+python-dotenv
+semantic-kernel
+vt-py
+python-telegram-bot
+iso639-lang
