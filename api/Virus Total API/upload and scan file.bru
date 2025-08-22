@@ -1,0 +1,24 @@
+meta {
+  name: upload and scan file
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{ _.baseURL }}/files
+  body: multipartForm
+  auth: none
+}
+
+headers {
+  Content-Type: multipart/form-data
+  User-Agent: insomnia/10.3.1
+}
+
+body:multipart-form {
+  file: 
+}
+
+settings {
+  encodeUrl: true
+}

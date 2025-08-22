@@ -1,0 +1,19 @@
+meta {
+  name: list of popular threat
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{VirusTotal_host}}/popular_threat_categories
+  body: none
+  auth: inherit
+}
+
+headers {
+  User-Agent: insomnia/10.3.1
+}
+
+settings {
+  encodeUrl: true
+}

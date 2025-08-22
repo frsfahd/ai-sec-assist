@@ -1,0 +1,20 @@
+meta {
+  name: random news - Bahasa Indonesia
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://news-api14.p.rapidapi.com/v2/article/random
+  body: none
+  auth: inherit
+}
+
+params:query {
+  language: id
+  topic: cybersec
+}
+
+settings {
+  encodeUrl: true
+}

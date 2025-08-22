@@ -1,0 +1,12 @@
+auth {
+  mode: apikey
+}
+
+auth:apikey {
+  key: x-apikey
+  value: {{VirusTotal-API-Key}}
+  placement: header
+}
+vars:pre-request {
+  VirusTotal_host: https://www.virustotal.com/api/v3
+}

@@ -1,0 +1,24 @@
+meta {
+  name: add and scan URL (malicious)
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{ _.baseURL }}/urls
+  body: formUrlEncoded
+  auth: none
+}
+
+headers {
+  Content-Type: application/x-www-form-urlencoded
+  User-Agent: insomnia/10.3.1
+}
+
+body:form-urlencoded {
+  url: http://ruehrdich.dnsdojo.org/.newsle/
+}
+
+settings {
+  encodeUrl: true
+}

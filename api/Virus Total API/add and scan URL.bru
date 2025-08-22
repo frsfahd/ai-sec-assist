@@ -1,0 +1,24 @@
+meta {
+  name: add and scan URL
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{ _.baseURL }}/urls
+  body: formUrlEncoded
+  auth: none
+}
+
+headers {
+  Content-Type: application/x-www-form-urlencoded
+  User-Agent: insomnia/10.3.1
+}
+
+body:form-urlencoded {
+  url: youtube.com
+}
+
+settings {
+  encodeUrl: true
+}

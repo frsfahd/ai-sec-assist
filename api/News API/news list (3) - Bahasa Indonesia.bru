@@ -1,0 +1,21 @@
+meta {
+  name: news list (3) - Bahasa Indonesia
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://news-api14.p.rapidapi.com/v2/search/articles?query=keamanan digital&language=id&limit=3
+  body: none
+  auth: inherit
+}
+
+params:query {
+  query: keamanan digital
+  language: id
+  limit: 3
+}
+
+settings {
+  encodeUrl: true
+}
