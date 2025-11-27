@@ -60,6 +60,8 @@ async def messageWithMedia(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # download file
     filepath = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "tmp", filename))
+    os.makedirs(os.path.dirname(filepath), exist_ok=True)
+
     await file.download_to_drive(filepath)
 
     prompt = f"""filepath: {filepath}  
